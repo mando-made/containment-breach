@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CONTAINMENT BREACH // SECTOR MAP</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+  <div class="header">
+    <div>
+      <div class="title">CONTAINMENT <span>BREACH</span></div>
+      <div class="sub">SECTOR MAP // AUTO-NAV ROUTE CALCULATOR</div>
+    </div>
+    <div class="controls">
+      <button id="regenerate">NEW SECTOR</button>
+      <button id="solve">CALCULATE ROUTE</button>
+    </div>
+  </div>
+
+  <canvas id="maze-canvas" width="840" height="540"></canvas>
+
+  <div class="footer-bar">
+    <div id="status">CARVING SECTOR...</div>
+    <label class="speed-label">
+      SCAN SPEED
+      <input type="range" id="speed" min="1" max="50" value="25">
+    </label>
+  </div>
+</div>
+
+<script src="maze.js"></script>
+<script src="solver.js"></script>
+<script src="renderer.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
